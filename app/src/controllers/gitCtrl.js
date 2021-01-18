@@ -44,7 +44,7 @@ class GitCtrl {
             const gitData = await axios.post(url, body, 
                 {
                     headers: {
-                        'Authorization': `Bearer ab2835e0b19c7f6d77b90dab9b28b178f9182932`,
+                        'Authorization': `Bearer ${process.env.GIT_CREDENTIALS}`,
                         'User-Agent': 'Awesome-Octocat-App'
                     }
                 }
@@ -84,7 +84,6 @@ class GitCtrl {
                 (repos[i].name !== null && repos[i].name.indexOf(query) !== -1) ||
                 (repos[i].description !== null && repos[i].description.indexOf(query) !== -1)
             ) {
-                console.log(repos[i])
 
                 item.header.value.title = repos[i].name
                 item.header.value.text = repos[i].description
