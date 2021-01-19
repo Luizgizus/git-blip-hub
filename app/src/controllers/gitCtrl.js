@@ -88,6 +88,8 @@ class GitCtrl {
                 item.header.value.title = repos[i].name
                 item.header.value.text = repos[i].description
 
+                repo.items.push(item)
+
                 if(repo.items.length === 5){
                     break
                 }
