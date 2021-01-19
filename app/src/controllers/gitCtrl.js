@@ -79,7 +79,7 @@ class GitCtrl {
         const repos = await this.getRepositories()
 
         for (let i = 0; i < repos.length; i++) {
-            const item = new DefaultItem
+            const item = new DefaultItem()
             if (
                 (repos[i].name !== null && repos[i].name.indexOf(query) !== -1) ||
                 (repos[i].description !== null && repos[i].description.indexOf(query) !== -1)
@@ -88,7 +88,9 @@ class GitCtrl {
                 item.header.value.title = repos[i].name
                 item.header.value.text = repos[i].description
 
-                repo.items.push(item)
+                if(repo.items.length === 5){
+                    break
+                }
             }
         }
         return repo

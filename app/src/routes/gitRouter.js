@@ -23,7 +23,7 @@ class GitRouter {
 
         } catch (err) {
             console.log(err)
-            response.message = "Erro ao realizar recuperação dos carros: " + err
+            response.message = "Erro ao realizar recuperação dos repositórios: " + err
             res.status(500)
         } finally {
             res.send(response)
