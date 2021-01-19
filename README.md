@@ -11,6 +11,13 @@ Para startar o projeto o seguinte passo a passo deve ser cumprido anteriormente:
 - Fazer uma cópia do arquivo .env.default, renomea-lo para .env, abrir o arquivo .env e preencher o unico campo contido nele para ser possivel conectar com a API do git, para isso deve ser gerado a chave pessoal no github.
 - No mesmo local que foi executado o priemiro passo deve ser exeutado o comando 'npm run app' e dessa forma a aplicação backend estará em funcionamento.
 
+<h1>Observação sobre o chatbot</h1>
+<h3>Roteamento para a API</h3>
+
+<p>Como o blip não comunica diretamente com o meu PC, foi necessário utilizar o norok</p>
+<p>A aplicação roda na porta 8081 que é necessário para startar o ngrok</p>
+<p>Como as rotas do ngrok não são constantes, é necessário que sejam trocadas na apliação do biulder do chatbot</p>
+<p>O lugar onde está a rota que faz a requisição é dentro do bloco 'Requisição carrousell'</p>
 
 <h1>Rotas da API</h1>
 
