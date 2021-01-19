@@ -14,10 +14,15 @@ Para startar o projeto o seguinte passo a passo deve ser cumprido anteriormente:
 <h1>Observação sobre o chatbot</h1>
 <h3>Roteamento para a API</h3>
 
-<p>Como o blip não comunica diretamente com o meu PC, foi necessário utilizar o norok</p>
+<p>Como o blip não comunica diretamente com o meu PC, foi necessário utilizar o ngrok</p>
 <p>A aplicação roda na porta 8081 que é necessário para startar o ngrok</p>
 <p>Como as rotas do ngrok não são constantes, é necessário que sejam trocadas na apliação do biulder do chatbot</p>
 <p>O lugar onde está a rota que faz a requisição é dentro do bloco 'Requisição carrousell'</p>
+
+
+<h3>Sobre o flow do chatbot</h3>
+
+<p>O flow está na raiz do projeto, e tem nome 'FluxoChat-gitbliphub.json'</p>
 
 <h1>Rotas da API</h1>
 
